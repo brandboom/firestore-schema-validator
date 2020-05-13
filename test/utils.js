@@ -1,4 +1,4 @@
-const admin = require('firebase-admin')
+let { firebase } = require('./FirebaseSDK');
 
 const arrays = [
   [],
@@ -8,11 +8,11 @@ const arrays = [
 const booleans = [ false, true ]
 
 const documentReferences = [
-  new admin.firestore.DocumentReference(),
+  new firebase.firestore.DocumentReference(),
 ]
 
 const geoPoints = [
-  new admin.firestore.GeoPoint(-50, 100),
+  new firebase.firestore.GeoPoint(-50, 100),
 ]
 
 const integers = [
@@ -50,7 +50,7 @@ const strings = [
 ]
 
 const timestamps = [
-  new admin.firestore.Timestamp(10000, 10000),
+  new firebase.firestore.Timestamp(10000, 10000),
 ]
 
 const acceptable = [

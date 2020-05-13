@@ -34,12 +34,18 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-promise": "^4.1.1",
-    "firebase-admin": "^7.3.0",
     "jest": "^24.8.0",
     "jsdoc": "^3.6.2",
     "jsdoc-to-markdown": "^5.0.0"
   },
   "dependencies": {
+    "firebase": "^7.14.3",
     "moment": "^2.24.0"
+  },
+  "optionalDependencies" : {
+    "firebase-admin": "^7.3.0"
+  },
+  "@comments": {
+    "dependencies": "either 'firebase' pacakge or 'firebase-admin' pacakage should be installed depending if this library will be used on the client side or the server side."
   }
 }
